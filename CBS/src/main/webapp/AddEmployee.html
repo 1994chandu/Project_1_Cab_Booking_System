@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>  
+<link rel="stylesheet" type="text/css" href="Cab.css">  
+</head> 
+<body>
+<form action="AddEmployeeServlet" method="post">
+ <table border= 1 align=center bgcolor=pink width=400 height=100>
+   <h1 style="color:rgb(43, 17, 158)" align=center> Cab Booking System </h1>
+ 
+    <caption><h2>Adding Employees</h2></caption>
+
+  <tr><td> <label Employee Id >Employee ID </label></td>  <td> <input   type=text name="eId" required></td>  <tr>
+ <tr><td> <label Employee Name >Employee Name</label></td>  <td> <input   type=text name="empName" required></td>  <tr>
+   <tr><td> <label Dept Name >Department Name</label></td>  <td> <select name="deptName">
+      <option value="JFD">JFD</option>
+      <option value="Oracle">Oracle</option>
+      <option value="Softskills">Softskills</option>
+      <option value="DSA">DSA</option>
+    </select> required></td>  <tr>
+      
+  <tr><td> <label Password >password</label></td><td> <input type=password place holder="select a strong password" name="password" required ></td><tr>
+   <tr><td> <label Employee phone number>phoneNumber</label></td><td> <input type=number  name="phno" required ></td><tr>
+   <tr><td align=center>  <input type=submit value="Submit"  >    
+ <td align=center><input type=reset value="Reset" ></td>          <tr>
+
+</table>
+ </form>
+</body>
+</html>

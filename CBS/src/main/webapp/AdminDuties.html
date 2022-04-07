@@ -1,0 +1,100 @@
+
+<!DOCTYPE html >
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="Cab.css">  
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Admin</title>
+<style type="text/css">
+ul li {display: inline-block;width: 245px;}
+ul li ul li:hover {background: lightyellow;}
+ul li ul li a {display:block !important;}
+ul li ul li {
+  background: lightblue;
+  display: block;
+}
+ul li:hover ul {display: block;}
+ul li ul {
+  position: absolute;
+  width: 100px;
+  display: none;
+}
+ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
+}
+div a {
+    text-decoration: none;
+    color:black;
+    font-size: 20px;
+    padding: 15px;
+    display:inline-block;
+}
+div{
+background-color:pink;}
+
+
+#main{
+color: white;
+}
+body{
+margin-left: 0px;
+margin-right: 0px;
+}
+.menu li{
+margin-left: 4%;
+}
+</style>
+</head>
+<body bgcolor=CadetBlue >
+<div id ="main" style="text-align:center; padding:5px;background-color: lightblue;">
+<h1 align="center" style="margin-top:2%;">Welcome Admin</h1></div>
+</div>
+<div align=right background-color:tomato;>
+<a href="Login.html">Logout</a>
+</div>
+<div align=center>
+  <ul class="menu">
+
+      <li>
+      <a href="#">Cabs</a>
+      <ul>
+        <li><a href="AddCab.html">Add Cabs</a></li>
+        <li><a href="DeleteCab.html">Delete Cabs</a></li>
+        
+      </ul>
+    </li>
+    <li>
+      <a href="#">Employees</a>
+      <ul>
+        <li><a href="AddEmployee.html">Add Employees</a></li>
+        <li><a href="DeleteEmployee.html">Delete Employees</a></li>
+        </ul>
+    </li></ul>
+</div> 
+<div id ="main" style="text-align:left; padding:150px;background-color:skyblue;">
+<table>
+
+   <tr><th> <form action=ViewCabsServlet method="post">  
+  <input type=submit value="View all Cabs">
+    </form></th></tr>
+     <tr><th> <form action=BookingHistoryServlet method="post">  
+  <input type=submit value="View Booking history">
+      </form></th></tr>
+       <tr><th> <form action=AcceptRequestServlet method="post">  
+  <input type=submit value="accept requst">
+      </form></th></tr>
+          <tr><th> <form action=RejectRequestServlet method="post">  
+  <input type=submit value="reject requst">
+      </form></th></tr>
+  <tr><th>  <form action=ViewEmployeesServlet method="post">  
+  <input type=submit value="View all Employees">
+      </form></th></tr>
+      
+    </table>
+    </div>
+     
+   
+</body>
+</html>

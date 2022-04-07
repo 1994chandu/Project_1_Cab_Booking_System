@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="Cab.css">  
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+
+<body bgcolor=CadetBlue >
+<div id ="main" style="text-align:center; padding:25px;background-color: lightblue;">
+<h1 align="center" style="margin-top:2%;">Welcome Employee</h1>
+</div>
+<div align=right background-color:tomato;>
+<a href="Login.html">Logout</a>
+</div> 
+<div>
+<form action=BookaCabServlet method="post">
+<table>
+ <tr><td align=center>  <input type=submit value="Request a Cab" >  </td>
+ </tr>
+ </table>
+ </form>
+ <form action=ViewCabsServlet method="post">
+ <table>
+ <tr> <td align=center> <input type=submit value="View all Cabs" ></td>  
+ </tr>
+  </table> 
+    </form> 
+    </div>            
+</body>
+</html>

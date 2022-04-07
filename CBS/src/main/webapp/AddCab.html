@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>  
+<link rel="stylesheet" type="text/css" href="Cab.css">  
+</head> 
+        <body>
+        <form action="AddCabServlet" method="post">
+         <table border= 1 align=center bgcolor=pink width=400 height=100>
+          <h1 style="color:rgb(43, 17, 158)" align=center> Adding Cab details</h1>
+          <caption><h2>Adding Cab details</h2></caption>
+          <tr><td> <label Cab number >Cab number </label></td> <td> <input type=number name="cabNo" required></td>  </tr>
+          <tr><td> <label Driver Name >Driver Name</label></td> <td> <input type=text name="driverName" required></td>  </tr>
+            <tr><td> <label Route>Destination Route </label></td> <td> <select name="route">
+               <option value="Suchitra">Suchitra</option>
+               <option value="Alwal">Alwal</option>
+               <option value="Uppal">Uppal</option>
+               <option value="DSNR">DSNR</option>
+             </select> required></td>  </tr>
+               <tr><td> <label time >Booking Time</label></td>  <td> <input type=time name="time" required > </td></tr>
+               <tr><td> <label Status >Booking Status</label></td>  <td> <select name="bookingStatus" required>
+                <option value="Free">Free</option>
+                <option value="Pending">Pending</option>
+                <option value="Booked">Booked</option> 
+            </select> </td>  </tr>
+             <tr><td> <label phone number>DriverPhone Number</label></td><td> <input type=number name="dmobile" required ></td><tr>
+                <tr><td align=center>  <input type=submit value="Submit"  >    
+                    <td align=center><input type=reset value="Reset" ></td>          <tr>
+                 </table>
+          </form>
+    </body>
+</html>
